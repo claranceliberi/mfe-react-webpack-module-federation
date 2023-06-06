@@ -1,0 +1,53 @@
+{
+    "$schema": "https://turbo.build/schema.json",
+    "globalDependencies": ["**/.env.*local"],
+    "globalEnv": [
+      "AUTO_ECOLE_URL",
+      "CBT_TRACKING_URL",
+      "DRIVER_LICENCING_URL",
+      "EXAMINATION_MANAGEMENT_URL",
+      "QUEUE_MANAGEMENT_URL",
+      "USER_MANAGEMENT_URL",
+      "WATCHLIST_URL"
+    ],
+    "pipeline": {
+      "build": {
+        "dependsOn": ["^build"],
+        "outputs": ["apps/**/.next/**", "!apps/**/.next/cache/**"]
+      },
+      "test": {
+        "dependsOn": ["^build"]
+      },
+      "main#build": {
+        "dependsOn": ["^build"],
+        "outputs": [".next/**", "!.next/cache/**"],
+        "env": [
+          "DOCS_URL",
+          "AUTO_ECOLE_URL",
+          "CBT_TRACKING_URL",
+          "DRIVER_LICENCING_URL",
+          "EXAMINATION_MANAGEMENT_URL",
+          "QUEUE_MANAGEMENT_URL",
+          "USER_MANAGEMENT_URL",
+          "WATCHLIST_URL"
+        ]
+      },
+      "lint": {},
+      "test:coverage": {},
+      "dev": {
+        "cache": false,
+        "persistent": true,
+        "exclude": ["packages/pivot-ui"]
+      },
+      "clean": {
+        "cache": false
+      },
+      "start": {
+        "cache": false
+      },
+      "test:watch": {
+        "cache": false
+      }
+    }
+  }
+  

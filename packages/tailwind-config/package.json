@@ -1,0 +1,22 @@
+{
+	"name": "tailwind-config",
+	"version": "0.0.1",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"clean": "rm -rf .next && rm -rf .turbo && rm -rf node_modules"
+	},
+	"keywords": [],
+	"author": "Verite Mugabo <mugaboverite@gmail.com> (https://veritem.me/)",
+	"license": "MIT",
+	"devDependencies": {
+		"@egoist/tailwindcss-icons": "^1.1.0",
+		"tailwind-scrollbar": "^3.0.4",
+		"tailwindcss": "3.3.2",
+		"tailwindcss-animate": "^1.0.5"
+	},
+	"dependencies": {
+		"@iconify-json/heroicons": "^1.1.10",
+		"@iconify-json/tabler": "^1.1.78"
+	}
+}
