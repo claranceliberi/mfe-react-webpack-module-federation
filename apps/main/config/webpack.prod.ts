@@ -8,10 +8,11 @@ import commonConfig from "./webpack.common";
 
 const prodConfig: Configuration = {
   mode: 'production',
-//   output: {
-//     filename: '[name].[contenthash].js',
-//     publicPath: '/container/latest/',
-//   },
+  
+  output: {
+    filename: '[name].[contenthash].js',
+    // publicPath: '/container/latest/',
+  },
 //   plugins: [
 //     new ModuleFederationPlugin({
 //       name: 'container',

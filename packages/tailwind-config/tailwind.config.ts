@@ -2,7 +2,7 @@ import { Config } from 'tailwindcss';
 import { iconsPlugin, getIconCollections } from '@egoist/tailwindcss-icons';
 
 export default {
-  content: ['./app/**/*.{js,ts,jsx,tsx,mdx}', '../../packages/pivot-ui/**/*.{js,ts,jsx,tsx}'],
+  content: ['./src/**/*.{js,ts,jsx,tsx}', '../../packages/pivot-ui/**/*.{js,ts,jsx,tsx}', './dist/*.html','./public/index.html'],
   theme: {
     extend: {
       fontFamily: {

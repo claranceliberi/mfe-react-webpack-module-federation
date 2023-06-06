@@ -1,5 +1,4 @@
 import { Configuration } from "webpack";
-// config/webpack.common.js
 import HtmlWebpackPlugin from "html-webpack-plugin";
 
  function createWebpackConfig(options : Configuration = {}) {
@@ -27,7 +26,7 @@ import HtmlWebpackPlugin from "html-webpack-plugin";
         },
         {
           test: /\.css$/i,
-          use: ["style-loader", "css-loader"],
+          use: ["style-loader", "css-loader","postcss-loader"],
         },
         {
             test: /\.tsx?$/,

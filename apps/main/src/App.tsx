@@ -1,11 +1,12 @@
 
 import React from 'react';
+import image from '@/assets/image.png'
 
 export default function App(){
     return (
         <div>
-            <h2 className='font-xl bg-lightblue'>App</h2>
-            <img src='~/src/assets/image.png' alt='image' />
+            <h2 className='font-bold text-2xl text-blue-800'>App</h2>
+            <img src={image} alt='image' />
         </div>
     )
 }
