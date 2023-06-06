@@ -1,13 +1,24 @@
+// eslint-disable-next-line no-undef
 module.exports = {
-  extends: ['next', 'turbo', 'prettier', 'plugin:vitest/recommended'],
-  plugins: ['prettier'],
+  extends: [
+    'turbo',
+    'plugin:vitest/recommended',
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+    'prettier',
+  ],
+  plugins: ['prettier', 'react', '@typescript-eslint'],
   rules: {
-    '@next/next/no-html-link-for-pages': 'off',
     'prettier/prettier': ['error'],
   },
+  parser: '@typescript-eslint/parser',
   parserOptions: {
-    babelOptions: {
-      presets: [require.resolve('next/babel')],
+    ecmaFeatures: {
+      jsx: true,
     },
+    ecmaVersion: 'latest',
+    sourceType: 'module',
   },
 };
