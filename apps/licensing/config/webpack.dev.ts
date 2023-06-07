@@ -3,17 +3,12 @@
 // const commonConfig = require("./webpack.common");
 // const packageJson = require("../package.json");
 
-import packageJson from '../package.json';
-import { container } from 'webpack';
-
 import { merge } from 'webpack-merge';
 import commonConfig from './webpack.common';
 import { Configuration } from 'webpack';
 import path from 'path';
 
-const PORT = 3000;
-
-const { ModuleFederationPlugin } = container;
+const PORT = 3002;
 
 const devConfig: Configuration = {
   mode: 'development',
@@ -39,13 +34,14 @@ const devConfig: Configuration = {
     },
   },
   plugins: [
-    new ModuleFederationPlugin({
-      name: 'shell',
-      remotes: {
-        examination: 'examination@http://localhost:3001/remoteEntry.js',
-      },
-      shared: packageJson.dependencies,
-    }),
+    // new ModuleFederationPlugin({
+    //   name: 'container',
+    //   remotes: {
+    //     marketing: 'marketing@http://localhost:8081/remoteEntry.js',
+    //     auth: 'auth@http://localhost:8082/remoteEntry.js',
+    //   },
+    //   shared: packageJson.dependencies,
+    // }),
   ],
 };
 
