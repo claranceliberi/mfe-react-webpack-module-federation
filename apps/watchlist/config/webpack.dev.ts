@@ -37,10 +37,10 @@ const devConfig: Configuration = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: 'watchlist',
+      name: 'watchList',
       filename: 'remoteEntry.js',
       exposes: {
-        './WatchlistApp': './src/bootstrap',
+        './WatchListApp': './src/bootstrap',
       },
       shared: packageJson.dependencies,
     }),

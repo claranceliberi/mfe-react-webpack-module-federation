@@ -23,10 +23,10 @@ const prodConfig: Configuration = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: 'examination',
+      name: 'licensing',
       filename: 'remoteEntry.js',
       exposes: {
-        './ExaminationApp': './src/bootstrap',
+        './LicensingApp': './src/bootstrap',
       },
       shared: packageJson.dependencies,
     }),

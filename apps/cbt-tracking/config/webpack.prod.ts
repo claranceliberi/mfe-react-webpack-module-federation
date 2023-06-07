@@ -23,10 +23,10 @@ const prodConfig: Configuration = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: 'examination',
+      name: 'cbtTracking',
       filename: 'remoteEntry.js',
       exposes: {
-        './ExaminationApp': './src/bootstrap',
+        './CbtTrackingApp': './src/bootstrap',
       },
       shared: packageJson.dependencies,
     }),

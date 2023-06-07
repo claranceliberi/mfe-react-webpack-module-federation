@@ -37,7 +37,7 @@ const devConfig: Configuration = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: 'cbt-tracking',
+      name: 'cbtTracking',
       filename: 'remoteEntry.js',
       exposes: {
         './CbtTrackingApp': './src/bootstrap',

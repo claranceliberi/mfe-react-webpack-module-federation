@@ -23,10 +23,10 @@ const prodConfig: Configuration = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: 'user-managment',
+      name: 'userManagement',
       filename: 'remoteEntry.js',
       exposes: {
-        './UsermanagmentApp': './src/bootstrap',
+        './UserManagementApp': './src/bootstrap',
       },
       shared: packageJson.dependencies,
     }),

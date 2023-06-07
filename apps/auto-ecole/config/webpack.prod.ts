@@ -23,10 +23,10 @@ const prodConfig: Configuration = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: 'examination',
+      name: 'autoEcole',
       filename: 'remoteEntry.js',
       exposes: {
-        './ExaminationApp': './src/bootstrap',
+        './AutoEcoleApp': './src/bootstrap',
       },
       shared: packageJson.dependencies,
     }),

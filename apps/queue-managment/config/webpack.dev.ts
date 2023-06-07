@@ -37,10 +37,10 @@ const devConfig: Configuration = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: 'examination',
+      name: 'queueManagement',
       filename: 'remoteEntry.js',
       exposes: {
-        './ExaminationApp': './src/bootstrap',
+        './QueueManagementApp': './src/bootstrap',
       },
       shared: packageJson.dependencies,
     }),

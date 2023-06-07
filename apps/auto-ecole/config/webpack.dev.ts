@@ -37,7 +37,7 @@ const devConfig: Configuration = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: 'auto-ecole',
+      name: 'autoEcole',
       filename: 'remoteEntry.js',
       exposes: {
         './AutoEcoleApp': './src/bootstrap',

@@ -43,6 +43,12 @@ const devConfig: Configuration = {
       name: 'shell',
       remotes: {
         examination: 'examination@http://localhost:3001/remoteEntry.js',
+        autoEcole: 'autoEcole@http://localhost:3002/remoteEntry.js',
+        cbtTracking: 'cbtTracking@http://localhost:3003/remoteEntry.js',
+        licensing: 'licensing@http://localhost:3004/remoteEntry.js',
+        queueManagement: 'queueManagement@http://localhost:3005/remoteEntry.js',
+        userManagement: 'userManagement@http://localhost:3006/remoteEntry.js',
+        watchList: 'watchList@http://localhost:3007/remoteEntry.js',
       },
       shared: packageJson.dependencies,
     }),
