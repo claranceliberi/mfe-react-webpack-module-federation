@@ -40,3 +40,7 @@ An experimental way of making loosely coupled microferontends, giving freedom to
 ├── pnpm-workspace.yaml
 └── turbo.json
 ```
+
+# Diagram
+
+![diagram](./arch.png)
