@@ -10,7 +10,6 @@ import { mount } from 'examination/ExaminationApp';
 // const ExaminationMFELazy = React.lazy(() => import('../mfe/examination'));
 
 const { routes: examinationRoutes, App: ExaminationApp } = mount();
-console.log(examinationRoutes);
 const routes: RouteObject[] = [
   {
     path: '/',

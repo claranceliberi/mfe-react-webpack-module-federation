@@ -1,6 +1,6 @@
 import React from 'react';
 import image from '@/assets/image.png';
-import { Link } from 'react-router-dom';
+import Link from '../router/Link';
 
 export default function RootLayout() {
   return (
