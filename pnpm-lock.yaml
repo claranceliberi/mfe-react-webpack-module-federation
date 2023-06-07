@@ -23,6 +23,62 @@ importers:
         specifier: ^1.10.1
         version: 1.10.1
 
+  apps/auto-ecole:
+    dependencies:
+      history:
+        specifier: ^5.3.0
+        version: 5.3.0
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
+      react-router-dom:
+        specifier: ^6.11.2
+        version: 6.11.2(react-dom@18.2.0)(react@18.2.0)
+    devDependencies:
+      shared-util:
+        specifier: workspace:*
+        version: link:../../packages/shared-util
+      tailwind-config:
+        specifier: workspace:*
+        version: link:../../packages/tailwind-config
+      tsconfig:
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
+      webpack-config:
+        specifier: workspace:*
+        version: link:../../packages/webpack-config
+
+  apps/cbt-tracking:
+    dependencies:
+      history:
+        specifier: ^5.3.0
+        version: 5.3.0
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
+      react-router-dom:
+        specifier: ^6.11.2
+        version: 6.11.2(react-dom@18.2.0)(react@18.2.0)
+    devDependencies:
+      shared-util:
+        specifier: workspace:*
+        version: link:../../packages/shared-util
+      tailwind-config:
+        specifier: workspace:*
+        version: link:../../packages/tailwind-config
+      tsconfig:
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
+      webpack-config:
+        specifier: workspace:*
+        version: link:../../packages/webpack-config
+
   apps/examination:
     dependencies:
       history:
@@ -52,6 +108,19 @@ importers:
         version: link:../../packages/webpack-config
 
   apps/licensing:
+    dependencies:
+      history:
+        specifier: ^5.3.0
+        version: 5.3.0
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
+      react-router-dom:
+        specifier: ^6.11.2
+        version: 6.11.2(react-dom@18.2.0)(react@18.2.0)
     devDependencies:
       shared-util:
         specifier: workspace:*
@@ -141,6 +210,118 @@ importers:
       webpack-merge:
         specifier: ^5.9.0
         version: 5.9.0
+
+  apps/queue-managment:
+    dependencies:
+      history:
+        specifier: ^5.3.0
+        version: 5.3.0
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
+      react-router-dom:
+        specifier: ^6.11.2
+        version: 6.11.2(react-dom@18.2.0)(react@18.2.0)
+    devDependencies:
+      shared-util:
+        specifier: workspace:*
+        version: link:../../packages/shared-util
+      tailwind-config:
+        specifier: workspace:*
+        version: link:../../packages/tailwind-config
+      tsconfig:
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
+      webpack-config:
+        specifier: workspace:*
+        version: link:../../packages/webpack-config
+
+  apps/template:
+    dependencies:
+      history:
+        specifier: ^5.3.0
+        version: 5.3.0
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
+      react-router-dom:
+        specifier: ^6.11.2
+        version: 6.11.2(react-dom@18.2.0)(react@18.2.0)
+    devDependencies:
+      shared-util:
+        specifier: workspace:*
+        version: link:../../packages/shared-util
+      tailwind-config:
+        specifier: workspace:*
+        version: link:../../packages/tailwind-config
+      tsconfig:
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
+      webpack-config:
+        specifier: workspace:*
+        version: link:../../packages/webpack-config
+
+  apps/user-managment:
+    dependencies:
+      history:
+        specifier: ^5.3.0
+        version: 5.3.0
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
+      react-router-dom:
+        specifier: ^6.11.2
+        version: 6.11.2(react-dom@18.2.0)(react@18.2.0)
+    devDependencies:
+      shared-util:
+        specifier: workspace:*
+        version: link:../../packages/shared-util
+      tailwind-config:
+        specifier: workspace:*
+        version: link:../../packages/tailwind-config
+      tsconfig:
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
+      webpack-config:
+        specifier: workspace:*
+        version: link:../../packages/webpack-config
+
+  apps/watchlist:
+    dependencies:
+      history:
+        specifier: ^5.3.0
+        version: 5.3.0
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
+      react-router-dom:
+        specifier: ^6.11.2
+        version: 6.11.2(react-dom@18.2.0)(react@18.2.0)
+    devDependencies:
+      shared-util:
+        specifier: workspace:*
+        version: link:../../packages/shared-util
+      tailwind-config:
+        specifier: workspace:*
+        version: link:../../packages/tailwind-config
+      tsconfig:
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
+      webpack-config:
+        specifier: workspace:*
+        version: link:../../packages/webpack-config
 
   packages/eslint-config-custom:
     dependencies:

@@ -1,14 +1,13 @@
-// const { merge } = require("webpack-merge");
-// const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
-// const commonConfig = require("./webpack.common");
-// const packageJson = require("../package.json");
-
+import packageJson from '../package.json';
+import { container } from 'webpack';
 import { merge } from 'webpack-merge';
 import commonConfig from './webpack.common';
 import { Configuration } from 'webpack';
 import path from 'path';
 
-const PORT = 3002;
+const PORT = 3004;
+
+const { ModuleFederationPlugin } = container;
 
 const devConfig: Configuration = {
   mode: 'development',
@@ -22,6 +21,9 @@ const devConfig: Configuration = {
   devServer: {
     port: PORT,
     historyApiFallback: true,
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+    },
     // compress: true,
     // open: true,
     // hot: true,
@@ -34,14 +36,14 @@ const devConfig: Configuration = {
     },
   },
   plugins: [
-    // new ModuleFederationPlugin({
-    //   name: 'container',
-    //   remotes: {
-    //     marketing: 'marketing@http://localhost:8081/remoteEntry.js',
-    //     auth: 'auth@http://localhost:8082/remoteEntry.js',
-    //   },
-    //   shared: packageJson.dependencies,
-    // }),
+    new ModuleFederationPlugin({
+      name: 'licensing',
+      filename: 'remoteEntry.js',
+      exposes: {
+        './LicensingApp': './src/bootstrap',
+      },
+      shared: packageJson.dependencies,
+    }),
   ],
 };
 

@@ -6,7 +6,8 @@
     "jsx": "react",
     "lib": ["dom", "dom.iterable", "esnext"],
     "module": "ESNext",
-    "target": "es6"
+    "target": "es6",
+    "esModuleInterop": true
   },
   "paths": {
     "~/*": ["./*"],

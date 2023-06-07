@@ -3,9 +3,9 @@
   "private": true,
   "scripts": {
     "build": "turbo run build --concurrency=14",
-    "dev": "turbo run dev --concurrency=14",
-    "dev:specific": "turbo run dev --concurrency=14 --scope=$SPECIFIC_APPS",
-    "lint": "turbo run lint --concurrency=14",
+    "dev": "turbo run dev --concurrency=16",
+    "dev:specific": "turbo run dev --concurrency=16 --scope=$SPECIFIC_APPS",
+    "lint": "turbo run lint --concurrency=16",
     "clean": "turbo run clean && rm -rf node_modules && rm -rf playwright-report && rm -rf test-results",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "start": "turbo run start",
