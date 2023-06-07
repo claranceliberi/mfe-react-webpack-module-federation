@@ -44,3 +44,8 @@ An experimental way of making loosely coupled microferontends, giving freedom to
 # Diagram
 
 ![diagram](./arch.png)
+
+- **Store** is a shared state that all apps might use for communication, let us say when theme changes, authentication state changes, etc. but this has to be used caref so that we don't find some of the apps depending on each other. only sub modules are allowed to be depended on main app, not on each other.
+- **Private network services** applications services and their assets can be accessed only by the main app, and not by external apps, this is to avoid exposing internal services to the public.
+- **Public network services** applications services and their assets can be accessed on public, this is to allow external apps to use some of the pages provided by the main app an. E2E are done on this network. since it has access to internal application services. Auth can be done on this level. 
+- **packages** are shared components that can be used by all apps, they are not allowed to have any business logic, they are just presentational components or/and  utils, they can be used by all apps
