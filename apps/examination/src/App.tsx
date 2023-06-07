@@ -1,11 +1,12 @@
 import React from 'react';
-import { RouterProvider } from 'react-router-dom';
-import { AppProps } from './types';
+import { Outlet } from 'react-router-dom';
 
-export default function App({ history }: AppProps) {
+export default function App() {
   return (
-    <React.StrictMode>
-      <RouterProvider router={history} />
-    </React.StrictMode>
+    <>
+      <div id="detail">
+        <Outlet />
+      </div>
+    </>
   );
 }

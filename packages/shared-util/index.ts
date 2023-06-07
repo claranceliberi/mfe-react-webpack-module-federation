@@ -1,1 +1,2 @@
-export * from './utils/lazy-load';
+export * from './src/lazy-load';
+export * from './src/linker';

@@ -21,6 +21,9 @@ const devConfig: Configuration = {
   devServer: {
     port: PORT,
     historyApiFallback: true,
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+    },
     // compress: true,
     // open: true,
     // hot: true,

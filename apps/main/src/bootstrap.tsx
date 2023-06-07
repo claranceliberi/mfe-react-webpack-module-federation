@@ -7,7 +7,12 @@ import router from './router';
 
 const container = document.getElementById('root') as HTMLElement;
 
+document.addEventListener('DOMContentLoaded', function (event) {
+  console.log('---------------------- DOMContentLoaded ----------------------');
+});
+
 const root = createRoot(container);
+export { root };
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
