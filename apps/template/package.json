@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "webpack serve --config config/webpack.dev.ts",
-    "build": "webpack --config config/webpack.prod.ts",
-    "lint": "eslint ./src/**/*.{ts,tsx}",
-    "lint:fix": "eslint ./src/**/*.{ts,tsx} --fix"
+    "devs": "webpack serve --config config/webpack.dev.ts",
+    "builds": "webpack --config config/webpack.prod.ts",
+    "lints": "eslint ./src/**/*.{ts,tsx}",
+    "lint:fixs": "eslint ./src/**/*.{ts,tsx} --fix"
   },
   "keywords": [],
   "author": "",
